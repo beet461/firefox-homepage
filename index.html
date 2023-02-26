@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome!</title>
+</head>
+<body>
+    <div class="blurslider" id="blurslider">
+        <div class="homepage" id="homepage">
+           <div class="greeting" id="greeting">
+                    <p class="welcome">Welcome, Rushvith</p>
+                    <p class="date" id="date">Date</p>
+           </div>
+           <div class="links" id="links">
+                <div class="link-wrapper">
+                    <div class="link" onclick="location.href='https://github.com/'">
+                        <img class="link-icon" src="assets/icons/github.svg">
+                    </div>
+                </div>
+                <div class="link-wrapper">
+                    <div class="link" onclick="location.href='https://www.primevideo.com/'">
+                        <img class="link-icon" src="assets/icons/primevideo.svg">
+                    </div>
+                </div>
+                <div class="link-wrapper">
+                    <div class="link" onclick="location.href='https://www.youtube.com/'">
+                        <img class="link-icon" src="assets/icons/youtube.svg">
+                    </div>
+                </div>
+                <div class="link-wrapper">
+                    <div class="link" onclick="location.href='https://corp8.myclassboard.com/StudentERP/StudentHome'">
+                        <img class="link-icon" src="assets/icons/mcb.svg">
+                    </div>
+                </div>
+                <div class="link-wrapper">
+                    <div class="link" onclick="location.href='https://drive.google.com/drive/u/0/my-drive'">
+                        <img class="link-icon" src="assets/icons/drive.svg">
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <script>
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        d = new Date();
+        date = `${days[d.getDay()]} ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+        
+        document.getElementById("date").innerHTML = date;
+    </script>
+</body>
+</html>
