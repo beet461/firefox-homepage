@@ -81,17 +81,17 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: top;
-
-    opacity: 0;
-
-    animation: 1s fade-in;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
 }
 
 .welcome {
     margin: 0%;
     font-size: 110px;
+
+    opacity: 0;
+
+    animation: 0.5s fade-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 
 .date {
@@ -100,9 +100,9 @@ p {
 
     opacity: 0;
 
-    animation: 1s fade-in;
+    animation: 0.5s fade-in;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 .links {
@@ -141,9 +141,9 @@ p {
 
     opacity: 0;
 
-    animation: 1s fade-in;
+    animation: 0.5s fade-in;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1.4s;
 }
 
 .link:hover {
