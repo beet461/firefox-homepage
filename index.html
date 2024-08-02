@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,12 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Welcome!</title>
 </head>
+
 <body>
     <div class="blurslider" id="blurslider">
-        <div class="homepage" id="homepage">
-           <div class="greeting" id="greeting">
-                    <p class="welcome">Welcome, Rushvith</p>
-                    <p class="date" id="date">Date</p>
-           </div>
-           <div class="links" id="links">
-                <div class="link-wrapper">
-                    <div class="link" onclick="location.href='https://github.com/'">
-                        <img class="link-icon" src="assets/icons/github.svg">
-                    </div>
-                </div>
-                <div class="link-wrapper">
-                    <div class="link" onclick="location.href='https://mail.google.com/mail/u/0/'">
-                        <img class="link-icon" src="assets/icons/gmail.svg">
-                    </div>
-                </div>
-                <div class="link-wrapper">
-                    <div class="link" onclick="location.href='https://www.youtube.com/'">
-                        <img class="link-icon" src="assets/icons/youtube.svg">
-                    </div>
-                </div>
-                <div class="link-wrapper">
-                    <div class="link" onclick="location.href='https://manthan.myclassboard.com/StudentERP/StudentHome'">
-                        <img class="link-icon" src="assets/icons/mcb.svg">
-                    </div>
-                </div>
-                <div class="link-wrapper">
-                    <div class="link" onclick="location.href='https://drive.google.com/drive/u/0/my-drive'">
-                        <img class="link-icon" src="assets/icons/drive.svg">
-                    </div>
-                </div>
-           </div>
+        <div class="greeting" id="greeting">
+            <p class="welcome">Welcome, Rushvith</p>
+            <p class="date" id="date">Date</p>
         </div>
     </div>
 
@@ -51,8 +24,9 @@
 
         d = new Date();
         date = `${days[d.getDay()]} ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
-        
+
         document.getElementById("date").innerHTML = date;
     </script>
 </body>
+
 </html>
